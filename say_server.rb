@@ -1,0 +1,7 @@
+require 'sinatra'
+require 'debugger'
+
+get '/say/:to_say' do |to_say|
+	`say "#{to_say}"`
+	return	"I said #{to_say}"
+end
