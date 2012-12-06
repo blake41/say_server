@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'debugger'
 
 get '/say/:to_say' do |to_say|
 	`say -v Vicki "#{to_say}"`
